@@ -1,0 +1,56 @@
+.application-header-container {
+    width: 100%;
+    //position: fixed;
+    //top: 0;
+    //background: white;
+    //z-index: 20000;
+
+    .application-header {
+        padding: 30px 30px;
+        font-size: 40px;
+        font-family: 'Comic Sans MS' !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.sm {
+            padding: 20px;
+        }
+
+        &.md {
+            padding: 20px;
+        }
+    
+        .application-pages {
+            display: flex;
+    
+            a {
+                color: unset;
+            }
+
+            a + a {
+                margin-left: 20px;
+            }
+    
+            .application-page {
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+                -ms-user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+            }
+        }
+
+        .hamburger {
+            z-index: 10;
+            outline: unset;
+            padding: unset;
+        }
+
+        .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+            background-color: white;
+        }
+        
+    }
+}
