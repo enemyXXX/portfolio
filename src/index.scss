@@ -8,6 +8,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
 
   &.hide-scroll {
     overflow: hidden;
